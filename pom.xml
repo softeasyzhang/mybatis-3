@@ -255,6 +255,12 @@
       <version>3.19.0</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.25</version>
+    </dependency>
     <dependency>
       <groupId>eu.codearte.catch-exception</groupId>
       <artifactId>catch-exception</artifactId>
@@ -301,7 +307,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <argLine>${argLine} -Xmx2048m</argLine>
           <systemProperties>
             <property>
               <name>derby.stream.error.file</name>
